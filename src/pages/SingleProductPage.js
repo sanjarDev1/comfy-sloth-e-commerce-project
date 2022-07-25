@@ -53,6 +53,7 @@ const SingleProductPage = () => {
     company,
     images,
   } = product;
+  console.log(images);
   return <Wrapper>
     <PageHero title={name} product />
     <div className="section section-center page">

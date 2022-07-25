@@ -37,11 +37,15 @@ export const FilterProvider = ({ children }) => {
 
   useEffect(() => {
     dispatch({ type: LOAD_PRODUCTS, payload: products });
+    // eslint-disable-next-line
+
   }, [products]);
 
   useEffect(() => {
     dispatch({ type: FILTER_PRODUCTS });
     dispatch({ type: SORT_PRODUCTS });
+    // eslint-disable-next-line
+
   }, [products, state.sort, state.filters]);
 
   const setGridView = () => {
